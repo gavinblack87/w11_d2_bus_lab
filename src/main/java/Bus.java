@@ -32,4 +32,8 @@ public class Bus {
     public void removePassenger() {
         this.passengers.remove(0);
     }
+    public void pickUp(BusStop stop){
+        Passenger passenger = stop.removePerson();
+        addPassenger(passenger);
+    }
 }
